@@ -1,26 +1,31 @@
 import { motion } from 'motion/react';
-import { ShieldCheck, Award, HardHat, TrendingUp } from 'lucide-react';
+import { ShieldCheck, Award, HardHat, TrendingUp, Briefcase } from 'lucide-react';
 
 const features = [
   {
     icon: Award,
-    title: 'Est. 2006',
-    description: 'Over 18 years of proven excellence in the Nigerian construction industry.',
+    title: 'Proven Experience',
+    description: 'Established indigenous company with nearly two decades of proven industry experience since 2006.',
   },
   {
-    icon: ShieldCheck,
-    title: 'CAC Registered',
-    description: 'Fully licensed and compliant with all regulatory bodies in Nigeria.',
-  },
-  {
-    icon: HardHat,
-    title: 'HSE Compliant',
-    description: 'Uncompromising commitment to Health, Safety, and Environment standards.',
+    icon: Briefcase,
+    title: 'Integrated Capabilities',
+    description: 'Comprehensive EPC, construction, and project management capabilities under one roof.',
   },
   {
     icon: TrendingUp,
-    title: 'EPC Expertise',
-    description: 'End-to-end Engineering, Procurement, and Construction capabilities.',
+    title: 'Technology Driven',
+    description: 'Technology-enabled support services and e-commerce platform for the construction sector.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Compliance & Safety',
+    description: 'Strong compliance with HSE, regulatory (CAC RC 1043373), and ethical standards.',
+  },
+  {
+    icon: HardHat,
+    title: 'Reliable Delivery',
+    description: 'Consistent delivery backed by highly skilled professionals and modern equipment.',
   },
 ];
 
@@ -34,7 +39,7 @@ export default function WhyChooseUs() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-[var(--color-accent)] font-semibold tracking-wide uppercase text-sm mb-3">Why Choose Us</h2>
+          <h2 className="text-[var(--color-accent)] font-semibold tracking-wide uppercase text-sm mb-3">Why Choose Jammos</h2>
           <h3 className="text-3xl md:text-4xl font-bold text-[var(--color-primary)] mb-6">
             Engineering Trust, <br /> Delivering Excellence
           </h3>
@@ -43,7 +48,7 @@ export default function WhyChooseUs() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {features.map((feature, index) => (
             <motion.div
               key={index}

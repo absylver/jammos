@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -23,30 +24,30 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <span className="inline-block py-1 px-3 rounded-full bg-[var(--color-accent)]/20 text-[var(--color-accent)] text-sm font-semibold tracking-wider mb-6 border border-[var(--color-accent)]/30 backdrop-blur-sm">
-            ESTABLISHED 2006
+            RC 1043373 • ESTABLISHED 2006
           </span>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 tracking-tight">
             Building the Future with <br />
-            <span className="text-[var(--color-accent)]">Excellence & Innovation</span>
+            <span className="text-[var(--color-accent)]">Excellence, Innovation, & Sustainability</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
-            Jammos Construction Nigeria Limited delivers world-class engineering, construction, and project management solutions rooted in African excellence.
+            Leading indigenous construction, engineering, and project management company delivering high-quality, value-driven solutions across Nigeria’s built environment.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="group bg-[var(--color-cta)] text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-orange-600 transition-all shadow-xl shadow-orange-500/30 flex items-center gap-2"
             >
               Start Your Project
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a
-              href="#projects"
+            </Link>
+            <Link
+              to="/projects"
               className="px-8 py-4 rounded-xl font-semibold text-lg text-white border border-white/20 hover:bg-white/10 transition-all backdrop-blur-sm"
             >
               View Our Work
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

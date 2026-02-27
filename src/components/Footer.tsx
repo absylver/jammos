@@ -1,4 +1,5 @@
 import { HardHat, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -31,12 +32,11 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-6">Quick Links</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
-              <li><a href="#" className="hover:text-[var(--color-accent)] transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-[var(--color-accent)] transition-colors">About Us</a></li>
-              <li><a href="#services" className="hover:text-[var(--color-accent)] transition-colors">Services</a></li>
-              <li><a href="#projects" className="hover:text-[var(--color-accent)] transition-colors">Projects</a></li>
-              <li><a href="#store" className="hover:text-[var(--color-accent)] transition-colors">Store</a></li>
-              <li><a href="#contact" className="hover:text-[var(--color-accent)] transition-colors">Contact</a></li>
+              <li><Link to="/" className="hover:text-[var(--color-accent)] transition-colors">Home</Link></li>
+              <li><Link to="/about" className="hover:text-[var(--color-accent)] transition-colors">About Us</Link></li>
+              <li><Link to="/services" className="hover:text-[var(--color-accent)] transition-colors">Services</Link></li>
+              <li><Link to="/projects" className="hover:text-[var(--color-accent)] transition-colors">Projects</Link></li>
+              <li><Link to="/contact" className="hover:text-[var(--color-accent)] transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -44,11 +44,11 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-6">Services</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
-              <li><a href="#" className="hover:text-[var(--color-accent)] transition-colors">Civil Engineering</a></li>
-              <li><a href="#" className="hover:text-[var(--color-accent)] transition-colors">Building Construction</a></li>
-              <li><a href="#" className="hover:text-[var(--color-accent)] transition-colors">Project Management</a></li>
-              <li><a href="#" className="hover:text-[var(--color-accent)] transition-colors">Telecom Infrastructure</a></li>
-              <li><a href="#" className="hover:text-[var(--color-accent)] transition-colors">Procurement</a></li>
+              <li><Link to="/services" className="hover:text-[var(--color-accent)] transition-colors">Civil Engineering</Link></li>
+              <li><Link to="/services" className="hover:text-[var(--color-accent)] transition-colors">Building Construction</Link></li>
+              <li><Link to="/services" className="hover:text-[var(--color-accent)] transition-colors">Project Management</Link></li>
+              <li><Link to="/services" className="hover:text-[var(--color-accent)] transition-colors">Telecom Infrastructure</Link></li>
+              <li><Link to="/services" className="hover:text-[var(--color-accent)] transition-colors">Procurement</Link></li>
             </ul>
           </div>
 
